@@ -1,0 +1,66 @@
+@font-face{
+  font-family: 'Fira Code';
+  src: url('static/fonts/FiraCode-Regular.ttf');
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+  background-color: skyblue;
+  color: black;
+  font-family: sans-serif;
+}
+
+.container {
+  width: 780px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center
+}
+
+.chat-window {
+  background-color: whitesmoke;
+  width: 550px;
+  border: 1px solid darkgray;
+  padding: 15px 15px 0px 15px;
+  margin-top: 30px;
+  border-top-right-radius: 30px;
+  border-top-left-radius: 30px;
+  position: relative
+}
+
+.chat-list {
+  height: 500px;
+  display: flex;
+  border-top-right-radius: 30px;
+  border-top-left-radius: 30px;
+  flex-direction: column-reverse;
+  overflow-y: scroll;
+}
+
+.from-me {
+  text-align: right;
+}
+
+.chat-input {
+  width: 100%;
+  padding: 10px 0 10px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center
+  /* al */
+}
+
+.chat-input input {
+  width: 90%;
+  margin-right: 10px;
+}
+
+.enter-name {
+  position: absolute;
+  top: 0;
+}
+
+.hide {
+  display: none;
+}
